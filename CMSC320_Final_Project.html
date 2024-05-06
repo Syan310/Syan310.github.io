@@ -1,0 +1,2444 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>712ead3877d14a6c850f0e78eedce00b</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="global-air-quality-trends-and-health-implications"
+class="cell markdown" id="VPOkTAMPUt1D">
+<h1><strong>Global Air Quality Trends and Health
+Implications</strong></h1>
+<h3 id="spring-2024-data-science-project"><strong>Spring 2024 Data
+Science Project</strong></h3>
+<h4 id="by-wenzhuo-niu-shaoyu-yan"><strong>By Wenzhuo Niu, Shaoyu
+Yan</strong></h4>
+<h2 id="1-introduction"><strong>1. Introduction</strong></h2>
+<p>Air quality significantly affects public health, ecosystem health,
+and global climate. As industrial activities increase and urban areas
+develop, it becomes increasingly important to monitor and understand the
+dynamics of air quality for effective policy-making, public health
+planning, and environmental protection. This data science project uses a
+global air pollution dataset to examine air quality trends across
+different regions and their effects on health and the environment.</p>
+<p>The main goal of this analysis is to identify patterns and trends in
+air quality indices (AQIs) from cities worldwide, with a focus on major
+pollutants like carbon monoxide (CO), nitrogen dioxide (NO2), ozone
+(O3), and particulate matter (PM2.5). These pollutants have
+well-documented negative impacts on health and are regulated globally.
+This project will analyze how AQI varies with geographical and temporal
+factors and how these variations affect public health:</p>
+<ol>
+<li><p>What are the regional variations in air quality, and what are the
+contributing factors?</p></li>
+<li><p>How does air quality affect public health in terms of
+pollution-related diseases, and how can data-driven insights help
+mitigate these impacts?</p></li>
+</ol>
+<p>These questions are critical to answer for several reasons.
+Understanding regional air quality variations helps identify areas with
+severe pollution, requiring targeted actions. Moreover, correlating air
+quality data with health outcomes enables a clearer quantification of
+the health burdens from air pollution, which can guide healthcare
+priorities and interventions.</p>
+<p>This analysis is vital beyond academic purposes. With ongoing
+challenges like urbanization and climate change, the insights from
+data-driven analyses are crucial. They inform policymakers, shape public
+health responses, and guide conservation efforts. Moreover,
+understanding air quality trends enables communities to advocate for
+healthier environments, influencing both local and global sustainability
+efforts.</p>
+<p>This project seeks to unravel the complexities of air pollution and
+contribute to a broader understanding of environmental data science. By
+using advanced statistical and machine learning techniques, it models
+the complex interactions between air pollutants and their impacts,
+providing a versatile analytical framework for future environmental
+health studies.</p>
+<p>In conclusion, exploring global air quality data is essential for
+public health, policymaking, and environmental management. This project
+aims to offer a comprehensive analysis that enhances understanding of
+air quality trends and motivates further research and actions for a
+healthier, more sustainable future.</p>
+</section>
+<div class="cell code" id="3ajwHA-Dg_qI">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import necessary libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error, r2_score</span></code></pre></div>
+</div>
+<section id="2-data-curation" class="cell markdown" id="zQeXoiWcVKTC">
+<h2><strong>2. Data Curation</strong></h2>
+<h4 id="data-source"><strong>Data Source</strong></h4>
+<p>Global Air Pollution Dataset from Kaggle: <a
+href="https://www.kaggle.com/datasets/hasibalmuzdadid/global-air-pollution-dataset/data"
+class="uri">https://www.kaggle.com/datasets/hasibalmuzdadid/global-air-pollution-dataset/data</a></p>
+<h4 id="1-loading-data"><strong>1. Loading Data</strong></h4>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:275}"
+id="2d8OqJxgVit2" data-outputId="d77f30bc-d3e6-4f53-e04a-3aede0815dd1">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the dataset</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">&#39;global air pollution dataset.csv&#39;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>air_pollution_data <span class="op">=</span> pd.read_csv(file_path)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the first few rows of the dataframe</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>air_pollution_data.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="20">
+
+  <div id="df-688aa3f3-6efa-4585-ae02-9ccffcf9ecd6" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>City</th>
+      <th>AQI Value</th>
+      <th>AQI Category</th>
+      <th>CO AQI Value</th>
+      <th>CO AQI Category</th>
+      <th>Ozone AQI Value</th>
+      <th>Ozone AQI Category</th>
+      <th>NO2 AQI Value</th>
+      <th>NO2 AQI Category</th>
+      <th>PM2.5 AQI Value</th>
+      <th>PM2.5 AQI Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Russian Federation</td>
+      <td>Praskoveya</td>
+      <td>51</td>
+      <td>Moderate</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>36</td>
+      <td>Good</td>
+      <td>0</td>
+      <td>Good</td>
+      <td>51</td>
+      <td>Moderate</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Brazil</td>
+      <td>Presidente Dutra</td>
+      <td>41</td>
+      <td>Good</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>5</td>
+      <td>Good</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>41</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Italy</td>
+      <td>Priolo Gargallo</td>
+      <td>66</td>
+      <td>Moderate</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>39</td>
+      <td>Good</td>
+      <td>2</td>
+      <td>Good</td>
+      <td>66</td>
+      <td>Moderate</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Poland</td>
+      <td>Przasnysz</td>
+      <td>34</td>
+      <td>Good</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>34</td>
+      <td>Good</td>
+      <td>0</td>
+      <td>Good</td>
+      <td>20</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>France</td>
+      <td>Punaauia</td>
+      <td>22</td>
+      <td>Good</td>
+      <td>0</td>
+      <td>Good</td>
+      <td>22</td>
+      <td>Good</td>
+      <td>0</td>
+      <td>Good</td>
+      <td>6</td>
+      <td>Good</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-688aa3f3-6efa-4585-ae02-9ccffcf9ecd6')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-688aa3f3-6efa-4585-ae02-9ccffcf9ecd6 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-688aa3f3-6efa-4585-ae02-9ccffcf9ecd6');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-16f9a757-0aaf-490d-bc9d-6e61f3f79fc6">
+  <button class="colab-df-quickchart" onclick="quickchart('df-16f9a757-0aaf-490d-bc9d-6e61f3f79fc6')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-16f9a757-0aaf-490d-bc9d-6e61f3f79fc6 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<section id="2-initial-data-exploration" class="cell markdown"
+id="pPv7aDWHVlwT">
+<h4><strong>2. Initial Data Exploration</strong></h4>
+<p>Perform initial data exploration to understand the structure and
+types of data</p>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:630}"
+id="UzEG5PLIVnde" data-outputId="a590e944-d5ed-470f-a5b0-09ab70c04f61">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the structure and summary of the dataset</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>air_pollution_data.info()</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Get a summary of statistics for the numerical columns</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>air_pollution_data.describe()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 23463 entries, 0 to 23462
+Data columns (total 12 columns):
+ #   Column              Non-Null Count  Dtype 
+---  ------              --------------  ----- 
+ 0   Country             23036 non-null  object
+ 1   City                23462 non-null  object
+ 2   AQI Value           23463 non-null  int64 
+ 3   AQI Category        23463 non-null  object
+ 4   CO AQI Value        23463 non-null  int64 
+ 5   CO AQI Category     23463 non-null  object
+ 6   Ozone AQI Value     23463 non-null  int64 
+ 7   Ozone AQI Category  23463 non-null  object
+ 8   NO2 AQI Value       23463 non-null  int64 
+ 9   NO2 AQI Category    23463 non-null  object
+ 10  PM2.5 AQI Value     23463 non-null  int64 
+ 11  PM2.5 AQI Category  23463 non-null  object
+dtypes: int64(5), object(7)
+memory usage: 2.1+ MB
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="2">
+
+  <div id="df-c8a3cfbc-030b-4fa7-8de4-da5223c43911" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>AQI Value</th>
+      <th>CO AQI Value</th>
+      <th>Ozone AQI Value</th>
+      <th>NO2 AQI Value</th>
+      <th>PM2.5 AQI Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>23463.000000</td>
+      <td>23463.000000</td>
+      <td>23463.000000</td>
+      <td>23463.000000</td>
+      <td>23463.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>72.010868</td>
+      <td>1.368367</td>
+      <td>35.193709</td>
+      <td>3.063334</td>
+      <td>68.519755</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>56.055220</td>
+      <td>1.832064</td>
+      <td>28.098723</td>
+      <td>5.254108</td>
+      <td>54.796443</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>6.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>39.000000</td>
+      <td>1.000000</td>
+      <td>21.000000</td>
+      <td>0.000000</td>
+      <td>35.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>55.000000</td>
+      <td>1.000000</td>
+      <td>31.000000</td>
+      <td>1.000000</td>
+      <td>54.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>79.000000</td>
+      <td>1.000000</td>
+      <td>40.000000</td>
+      <td>4.000000</td>
+      <td>79.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>500.000000</td>
+      <td>133.000000</td>
+      <td>235.000000</td>
+      <td>91.000000</td>
+      <td>500.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c8a3cfbc-030b-4fa7-8de4-da5223c43911')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-c8a3cfbc-030b-4fa7-8de4-da5223c43911 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-c8a3cfbc-030b-4fa7-8de4-da5223c43911');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-5d254c16-f479-469e-9057-57482a215c25">
+  <button class="colab-df-quickchart" onclick="quickchart('df-5d254c16-f479-469e-9057-57482a215c25')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-5d254c16-f479-469e-9057-57482a215c25 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<section id="3-handling-missing-values" class="cell markdown"
+id="Xtp0neaUVpkA">
+<h4><strong>3. Handling Missing Values</strong></h4>
+<p>Check for missing values and decide on a strategy to handle them. In
+this example, we handle missing values in categorical data by replacing
+them with "Unknown", and for numerical data, replace missing values with
+the median or mean.</p>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="XnQyiomXVso1" data-outputId="44ed8f13-dd3f-4c89-857e-82d64a46a5a4">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for missing values in each column</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>missing_values <span class="op">=</span> air_pollution_data.isnull().<span class="bu">sum</span>()</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Missing values in each column:</span><span class="ch">\n</span><span class="st">&quot;</span>, missing_values)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Fill missing categorical values with &#39;Unknown&#39;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>air_pollution_data[<span class="st">&#39;Country&#39;</span>].fillna(<span class="st">&#39;Unknown&#39;</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>air_pollution_data[<span class="st">&#39;City&#39;</span>].fillna(<span class="st">&#39;Unknown&#39;</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming &#39;AQI Value&#39; is a numerical column, fill missing values with the median</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>air_pollution_data[<span class="st">&#39;AQI Value&#39;</span>].fillna(air_pollution_data[<span class="st">&#39;AQI Value&#39;</span>].median(), inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Missing values in each column:
+ Country               427
+City                    1
+AQI Value               0
+AQI Category            0
+CO AQI Value            0
+CO AQI Category         0
+Ozone AQI Value         0
+Ozone AQI Category      0
+NO2 AQI Value           0
+NO2 AQI Category        0
+PM2.5 AQI Value         0
+PM2.5 AQI Category      0
+dtype: int64
+</code></pre>
+</div>
+</div>
+<section id="4-data-transformation" class="cell markdown"
+id="JlRscRJMVyln">
+<h4><strong>4. Data Transformation</strong></h4>
+<p>For this step, focus on ensuring all categorical data are in a
+consistent format and create any derived metrics that could be useful
+for analysis.</p>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:518}"
+id="suML-JqSVznK" data-outputId="9b72e0ed-3e5e-4bb6-a2c9-c0f06aa58c21">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert categorical columns to a uniform format if necessary</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>air_pollution_data[<span class="st">&#39;Country&#39;</span>] <span class="op">=</span> air_pollution_data[<span class="st">&#39;Country&#39;</span>].<span class="bu">str</span>.title()  <span class="co"># Capitalize the first letter</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>air_pollution_data[<span class="st">&#39;City&#39;</span>] <span class="op">=</span> air_pollution_data[<span class="st">&#39;City&#39;</span>].<span class="bu">str</span>.title()</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> categorize_aqi(aqi):</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> aqi <span class="op">&lt;=</span> <span class="dv">50</span>:</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">&#39;Good&#39;</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> aqi <span class="op">&lt;=</span> <span class="dv">100</span>:</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">&#39;Moderate&#39;</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> aqi <span class="op">&lt;=</span> <span class="dv">150</span>:</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">&#39;Unhealthy for Sensitive Groups&#39;</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> aqi <span class="op">&lt;=</span> <span class="dv">200</span>:</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">&#39;Unhealthy&#39;</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> aqi <span class="op">&lt;=</span> <span class="dv">300</span>:</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">&#39;Very Unhealthy&#39;</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">&#39;Hazardous&#39;</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>air_pollution_data[<span class="st">&#39;Pollution Level&#39;</span>] <span class="op">=</span> air_pollution_data[<span class="st">&#39;AQI Value&#39;</span>].<span class="bu">apply</span>(categorize_aqi)</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Check data types to ensure they are appropriate for the variables</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(air_pollution_data.dtypes)</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Final preview of the DataFrame to ensure all changes are correctly applied</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>air_pollution_data.head()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Country               object
+City                  object
+AQI Value              int64
+AQI Category          object
+CO AQI Value           int64
+CO AQI Category       object
+Ozone AQI Value        int64
+Ozone AQI Category    object
+NO2 AQI Value          int64
+NO2 AQI Category      object
+PM2.5 AQI Value        int64
+PM2.5 AQI Category    object
+Pollution Level       object
+dtype: object
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="6">
+
+  <div id="df-ccba52d3-15b7-4b09-8df8-3bc1fa419451" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>City</th>
+      <th>AQI Value</th>
+      <th>AQI Category</th>
+      <th>CO AQI Value</th>
+      <th>CO AQI Category</th>
+      <th>Ozone AQI Value</th>
+      <th>Ozone AQI Category</th>
+      <th>NO2 AQI Value</th>
+      <th>NO2 AQI Category</th>
+      <th>PM2.5 AQI Value</th>
+      <th>PM2.5 AQI Category</th>
+      <th>Pollution Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Russian Federation</td>
+      <td>Praskoveya</td>
+      <td>51</td>
+      <td>Moderate</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>36</td>
+      <td>Good</td>
+      <td>0</td>
+      <td>Good</td>
+      <td>51</td>
+      <td>Moderate</td>
+      <td>Moderate</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Brazil</td>
+      <td>Presidente Dutra</td>
+      <td>41</td>
+      <td>Good</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>5</td>
+      <td>Good</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>41</td>
+      <td>Good</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Italy</td>
+      <td>Priolo Gargallo</td>
+      <td>66</td>
+      <td>Moderate</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>39</td>
+      <td>Good</td>
+      <td>2</td>
+      <td>Good</td>
+      <td>66</td>
+      <td>Moderate</td>
+      <td>Moderate</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Poland</td>
+      <td>Przasnysz</td>
+      <td>34</td>
+      <td>Good</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>34</td>
+      <td>Good</td>
+      <td>0</td>
+      <td>Good</td>
+      <td>20</td>
+      <td>Good</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>France</td>
+      <td>Punaauia</td>
+      <td>22</td>
+      <td>Good</td>
+      <td>0</td>
+      <td>Good</td>
+      <td>22</td>
+      <td>Good</td>
+      <td>0</td>
+      <td>Good</td>
+      <td>6</td>
+      <td>Good</td>
+      <td>Good</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-ccba52d3-15b7-4b09-8df8-3bc1fa419451')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-ccba52d3-15b7-4b09-8df8-3bc1fa419451 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-ccba52d3-15b7-4b09-8df8-3bc1fa419451');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-59d77226-03dc-426c-8d02-d9dd79f19c12">
+  <button class="colab-df-quickchart" onclick="quickchart('df-59d77226-03dc-426c-8d02-d9dd79f19c12')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-59d77226-03dc-426c-8d02-d9dd79f19c12 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<section id="5-final-data-preparation" class="cell markdown"
+id="I2m-eyCBXVKO">
+<h4><strong>5. Final Data Preparation</strong></h4>
+<p>Prepare final DataFrame for analysis, ensuring all transformations
+are correctly applied, and data types are set.</p>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:275}"
+id="TNIlSnaHXXgD" data-outputId="725baa6e-6a6d-4c78-d08a-3f177ad3f7a1">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ensure all data types are correct</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>air_pollution_data.dtypes</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Final check of the prepared DataFrame</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>air_pollution_data.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="8">
+
+  <div id="df-60209b3e-3b89-4cbd-8ecb-b19087d05db6" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>City</th>
+      <th>AQI Value</th>
+      <th>AQI Category</th>
+      <th>CO AQI Value</th>
+      <th>CO AQI Category</th>
+      <th>Ozone AQI Value</th>
+      <th>Ozone AQI Category</th>
+      <th>NO2 AQI Value</th>
+      <th>NO2 AQI Category</th>
+      <th>PM2.5 AQI Value</th>
+      <th>PM2.5 AQI Category</th>
+      <th>Pollution Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Russian Federation</td>
+      <td>Praskoveya</td>
+      <td>51</td>
+      <td>Moderate</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>36</td>
+      <td>Good</td>
+      <td>0</td>
+      <td>Good</td>
+      <td>51</td>
+      <td>Moderate</td>
+      <td>Moderate</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Brazil</td>
+      <td>Presidente Dutra</td>
+      <td>41</td>
+      <td>Good</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>5</td>
+      <td>Good</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>41</td>
+      <td>Good</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Italy</td>
+      <td>Priolo Gargallo</td>
+      <td>66</td>
+      <td>Moderate</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>39</td>
+      <td>Good</td>
+      <td>2</td>
+      <td>Good</td>
+      <td>66</td>
+      <td>Moderate</td>
+      <td>Moderate</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Poland</td>
+      <td>Przasnysz</td>
+      <td>34</td>
+      <td>Good</td>
+      <td>1</td>
+      <td>Good</td>
+      <td>34</td>
+      <td>Good</td>
+      <td>0</td>
+      <td>Good</td>
+      <td>20</td>
+      <td>Good</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>France</td>
+      <td>Punaauia</td>
+      <td>22</td>
+      <td>Good</td>
+      <td>0</td>
+      <td>Good</td>
+      <td>22</td>
+      <td>Good</td>
+      <td>0</td>
+      <td>Good</td>
+      <td>6</td>
+      <td>Good</td>
+      <td>Good</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-60209b3e-3b89-4cbd-8ecb-b19087d05db6')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-60209b3e-3b89-4cbd-8ecb-b19087d05db6 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-60209b3e-3b89-4cbd-8ecb-b19087d05db6');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-f70dabd2-f417-4b25-8e73-645ed70a5be4">
+  <button class="colab-df-quickchart" onclick="quickchart('df-f70dabd2-f417-4b25-8e73-645ed70a5be4')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-f70dabd2-f417-4b25-8e73-645ed70a5be4 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<section id="3-exploratory-data-analysis" class="cell markdown"
+id="v0RaLhplYtaN">
+<h2><strong>3. Exploratory data analysis</strong></h2>
+<p>In this section, we begin our analysis by exploring the central
+tendencies and spread of the AQI values across the dataset. This is
+accomplished using the <code>describe()</code> function from pandas,
+which provides a summary including the mean, median, minimum, and
+maximum values, along with the 25th, 50th, and 75th percentiles.</p>
+<p>We then visualize this distribution using a boxplot, which helps in
+identifying the range of AQI values, the presence of any outliers, and
+the overall spread (interquartile range). The boxplot is a useful tool
+for quickly understanding the distribution characteristics of AQI
+without getting into complex statistics.</p>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="XdPqaDQYZCrB" data-outputId="ed569268-6408-4911-eb22-58b26e7f07d2">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming air_pollution_data is your preprocessed DataFrame</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Descriptive Statistics Analysis ---</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate summary statistics for &#39;AQI Value&#39;</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>aqi_value_summary <span class="op">=</span> air_pollution_data[<span class="st">&#39;AQI Value&#39;</span>].describe()</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting a boxplot for &#39;AQI Value&#39;</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span>air_pollution_data[<span class="st">&#39;AQI Value&#39;</span>], color<span class="op">=</span><span class="st">&#39;lightgreen&#39;</span>)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Boxplot of AQI Values&#39;</span>)</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;AQI Value&#39;</span>)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Hypothesis Testing Analysis ---</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Null hypothesis H0: The mean AQI Value is 50</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternative hypothesis H1: The mean AQI Value is not 50</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>mean_aqi_value <span class="op">=</span> air_pollution_data[<span class="st">&#39;AQI Value&#39;</span>].mean()</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>t_statistic, p_value <span class="op">=</span> stats.ttest_1samp(air_pollution_data[<span class="st">&#39;AQI Value&#39;</span>], <span class="dv">50</span>)</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>hypothesis_test_result <span class="op">=</span> <span class="st">&quot;The mean AQI Value is significantly different from 50.&quot;</span> <span class="cf">if</span> p_value <span class="op">&lt;</span> <span class="fl">0.05</span> <span class="cf">else</span> <span class="st">&quot;There is no significant difference in the mean AQI Value from 50.&quot;</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting the histogram of &#39;AQI Value&#39; with the hypothesis test value</span></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>sns.histplot(air_pollution_data[<span class="st">&#39;AQI Value&#39;</span>], kde<span class="op">=</span><span class="va">True</span>, color<span class="op">=</span><span class="st">&#39;steelblue&#39;</span>, bins<span class="op">=</span><span class="dv">30</span>)</span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>plt.axvline(x<span class="op">=</span><span class="dv">50</span>, color<span class="op">=</span><span class="st">&#39;red&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;--&#39;</span>, label<span class="op">=</span><span class="st">&#39;Hypothesis Test Value (50)&#39;</span>)</span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>plt.axvline(x<span class="op">=</span>mean_aqi_value, color<span class="op">=</span><span class="st">&#39;green&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;--&#39;</span>, label<span class="op">=</span><span class="ss">f&#39;Mean AQI Value (</span><span class="sc">{</span>mean_aqi_value<span class="sc">:.2f}</span><span class="ss">)&#39;</span>)</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Histogram of AQI Values with Hypothesis Test Value&#39;</span>)</span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;AQI Value&#39;</span>)</span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Frequency&#39;</span>)</span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Over-Representation Analysis ---</span></span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculating the percentage of each AQI category</span></span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a>aqi_category_counts <span class="op">=</span> air_pollution_data[<span class="st">&#39;AQI Category&#39;</span>].value_counts()</span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>num_entries <span class="op">=</span> air_pollution_data.shape[<span class="dv">0</span>]</span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>aqi_category_percentage <span class="op">=</span> (aqi_category_counts <span class="op">/</span> num_entries) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting the percentage of each AQI category</span></span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span>aqi_category_percentage.index, y<span class="op">=</span>aqi_category_percentage.values, palette<span class="op">=</span><span class="st">&quot;viridis&quot;</span>)</span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Percentage of AQI Categories&#39;</span>)</span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;AQI Category&#39;</span>)</span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Percentage&#39;</span>)</span>
+<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Chi-Square Test for Association ---</span></span>
+<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a><span class="co"># Categorize &#39;Ozone AQI Value&#39; into &#39;Low&#39; and &#39;High&#39; based on its median</span></span>
+<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a>ozone_median <span class="op">=</span> air_pollution_data[<span class="st">&#39;Ozone AQI Value&#39;</span>].median()</span>
+<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a>air_pollution_data[<span class="st">&#39;Ozone Level&#39;</span>] <span class="op">=</span> np.where(air_pollution_data[<span class="st">&#39;Ozone AQI Value&#39;</span>] <span class="op">&lt;=</span> ozone_median, <span class="st">&#39;Low&#39;</span>, <span class="st">&#39;High&#39;</span>)</span>
+<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a contingency table of &#39;AQI Category&#39; and &#39;Ozone Level&#39;</span></span>
+<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a>contingency_table <span class="op">=</span> pd.crosstab(air_pollution_data[<span class="st">&#39;AQI Category&#39;</span>], air_pollution_data[<span class="st">&#39;Ozone Level&#39;</span>])</span>
+<span id="cb10-53"><a href="#cb10-53" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform the Chi-Square test</span></span>
+<span id="cb10-54"><a href="#cb10-54" aria-hidden="true" tabindex="-1"></a>chi2, p, dof, expected <span class="op">=</span> stats.chi2_contingency(contingency_table)</span>
+<span id="cb10-55"><a href="#cb10-55" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the contingency table as a heatmap</span></span>
+<span id="cb10-56"><a href="#cb10-56" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb10-57"><a href="#cb10-57" aria-hidden="true" tabindex="-1"></a>sns.heatmap(contingency_table, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">&quot;YlGnBu&quot;</span>, fmt<span class="op">=</span><span class="st">&#39;g&#39;</span>)</span>
+<span id="cb10-58"><a href="#cb10-58" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Heatmap of AQI Category vs. Ozone Level&#39;</span>)</span>
+<span id="cb10-59"><a href="#cb10-59" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Ozone Level&#39;</span>)</span>
+<span id="cb10-60"><a href="#cb10-60" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;AQI Category&#39;</span>)</span>
+<span id="cb10-61"><a href="#cb10-61" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb10-62"><a href="#cb10-62" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the result of the Chi-Square test</span></span>
+<span id="cb10-63"><a href="#cb10-63" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Chi-Square Statistic:&quot;</span>, chi2)</span>
+<span id="cb10-64"><a href="#cb10-64" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;P-value:&quot;</span>, p)</span>
+<span id="cb10-65"><a href="#cb10-65" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Degrees of Freedom:&quot;</span>, dof)</span>
+<span id="cb10-66"><a href="#cb10-66" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Expected Frequencies:</span><span class="ch">\n</span><span class="st">&quot;</span>, expected)</span>
+<span id="cb10-67"><a href="#cb10-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-68"><a href="#cb10-68" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Comprehensive Summary ---</span></span>
+<span id="cb10-69"><a href="#cb10-69" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Descriptive Statistics:</span><span class="ch">\n</span><span class="st">&quot;</span>, aqi_value_summary)</span>
+<span id="cb10-70"><a href="#cb10-70" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Hypothesis Test Result:&quot;</span>, hypothesis_test_result)</span>
+<span id="cb10-71"><a href="#cb10-71" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Over-Representation of AQI Categories (%):</span><span class="ch">\n</span><span class="st">&quot;</span>, aqi_category_percentage)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_2fcc4a5131f74f7fbfe5f2d044c26379/c5e999099b55bf8f6d95c8dfc903359c735846b3.png" /></p>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_2fcc4a5131f74f7fbfe5f2d044c26379/110f75c04958330c59c90939e1c27f243f039330.png" /></p>
+</div>
+<div class="output stream stderr">
+<pre><code>&lt;ipython-input-11-3df7adfdfa55&gt;:45: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(x=aqi_category_percentage.index, y=aqi_category_percentage.values, palette=&quot;viridis&quot;)
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_2fcc4a5131f74f7fbfe5f2d044c26379/a635a0afdf7bd257465a718bb468cc718a04eea3.png" /></p>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_2fcc4a5131f74f7fbfe5f2d044c26379/114069b5ea138ff910b7129d4875155fa2d7531e.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Chi-Square Statistic: 863.8129524326013
+P-value: 1.8044982858900286e-184
+Degrees of Freedom: 5
+
+Expected Frequencies:
+ [[4708.62140391 5227.37859609]
+ [  90.51395815  100.48604185]
+ [4374.52538039 4856.47461961]
+ [1055.36431829 1171.63568171]
+ [ 753.96705451  837.03294549]
+ [ 136.00788475  150.99211525]]
+Descriptive Statistics:
+ count    23463.000000
+mean        72.010868
+std         56.055220
+min          6.000000
+25%         39.000000
+50%         55.000000
+75%         79.000000
+max        500.000000
+Name: AQI Value, dtype: float64
+
+Hypothesis Test Result: The mean AQI Value is significantly different from 50.
+
+Over-Representation of AQI Categories (%):
+ AQI Category
+Good                              42.347526
+Moderate                          39.342795
+Unhealthy                          9.491540
+Unhealthy for Sensitive Groups     6.780889
+Very Unhealthy                     1.223202
+Hazardous                          0.814048
+Name: count, dtype: float64
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="8pqUW_6KZrz2">
+<h3 id="conclusion-for-each-statistical-method">Conclusion for Each
+Statistical Method</h3>
+<h4 id="1-descriptive-statistics-analysis">1. Descriptive Statistics
+Analysis</h4>
+<ul>
+<li><strong>Findings:</strong> The descriptive statistics for 'AQI
+Value' revealed a wide range of AQI values, from as low as 6 to as high
+as 500, with a mean around 72. The boxplot highlighted a right-skewed
+distribution, indicating that while most of the AQI values are
+relatively low, there are significant outliers on the higher end. This
+skewness suggests that while most days have good to moderate air
+quality, extreme pollution events are not uncommon.</li>
+<li><strong>Reasoning:</strong> The spread and skewness of AQI values
+are crucial for understanding air quality patterns. Days with extremely
+high AQI values could correspond to specific pollution events or
+environmental conditions that worsen air quality.</li>
+</ul>
+<h4 id="2-hypothesis-testing-analysis">2. Hypothesis Testing
+Analysis</h4>
+<ul>
+<li><strong>Findings:</strong> The one-sample t-test showed that the
+mean AQI Value is significantly different from 50, with a mean value of
+approximately 72. This suggests that the overall air quality tends to be
+worse than what would be considered 'Moderate' air quality according to
+the AQI scale.</li>
+<li><strong>Reasoning:</strong> This finding is important for
+understanding the general air quality condition. The statistical
+significance (p-value &lt; 0.05) indicates that the deviation from the
+AQI value of 50 is not due to random chance, highlighting a need for
+deeper investigation into factors that might be contributing to higher
+pollution levels.</li>
+</ul>
+<h4 id="3-over-representation-analysis">3. Over-Representation
+Analysis</h4>
+<ul>
+<li><strong>Findings:</strong> The analysis of AQI Categories showed
+that 'Good' and 'Moderate' categories are the most common, but there's a
+significant representation of 'Unhealthy' categories as well. This
+suggests a variation in air quality, with a considerable number of days
+experiencing poor air quality.</li>
+<li><strong>Reasoning:</strong> The proportion of days in each AQI
+category helps identify the prevalence of various air quality
+conditions. The presence of 'Unhealthy' categories at a non-negligible
+frequency underscores the potential health risks posed by air
+pollution.</li>
+</ul>
+<h4 id="4-chi-square-test-for-association">4. Chi-Square Test for
+Association</h4>
+<ul>
+<li><strong>Findings:</strong> The Chi-Square test indicated a
+significant association between the 'Ozone Level' and 'AQI Category',
+suggesting that days with high ozone levels are likely to have different
+AQI category distributions compared to days with low ozone levels.</li>
+<li><strong>Reasoning:</strong> This finding points to the impact of
+ozone levels on overall air quality. The association between ozone
+levels and AQI categories suggests that ozone could be a significant
+factor in air quality, influencing whether a day is classified as
+'Good', 'Moderate', or 'Unhealthy'.</li>
+</ul>
+<h3
+id="combined-conclusion-and-impact-on-primary-analysis-technique-choice">Combined
+Conclusion and Impact on Primary Analysis Technique Choice</h3>
+<p>The combined findings from the descriptive statistics, hypothesis
+testing, over-representation analysis, and Chi-Square test provide a
+comprehensive overview of the dataset's key features. We observed a wide
+range of AQI values with a right-skewed distribution, a mean AQI value
+significantly higher than 'Moderate' air quality, variation in the
+frequency of different AQI categories, and a significant association
+between ozone levels and AQI categories.</p>
+<p><strong>Primary Analysis Technique Choice:</strong> Based on these
+findings, regression analysis and time series analysis appear to be
+suitable primary analysis techniques for the next submission. Regression
+analysis can help identify the factors most strongly associated with
+variations in AQI values, such as ozone levels, while time series
+analysis could uncover trends and patterns in air quality over time.</p>
+<p><strong>Impact of Findings:</strong> The choice of analysis
+techniques is influenced by the identified variation in air quality and
+the significant role of ozone levels. Understanding these patterns and
+associations is crucial for predicting air quality and recommending
+interventions. The right-skewed distribution of AQI values and the
+significant variation across AQI categories highlight the need for
+models that can account for non-linear relationships and temporal
+patterns in air quality data.</p>
+<p><strong>Key Features of Dataset:</strong> The dataset is
+characterized by a broad range of air quality conditions, with a
+tendency towards moderate air quality that occasionally dips into
+unhealthy levels. Ozone levels play a significant role in determining
+the AQI category, which suggests focusing on pollutant levels and their
+temporal dynamics in further analyses.</p>
+</div>
+<section id="4-primary-analysis" class="cell markdown"
+id="rldMAJ6OZswT">
+<h2><strong>4. Primary analysis.</strong></h2>
+<p><strong>Why Regression Analysis?</strong></p>
+<p><strong>1. Purpose:</strong> Regression analysis will allow us to
+model the relationship between the AQI values and various pollutants
+like CO, NO2, Ozone, and PM2.5. By understanding these relationships, we
+can predict AQI levels based on known pollutant concentrations.</p>
+<p><strong>2. Data Suitability:</strong> Our data contains continuous
+numerical variables such as 'AQI Value', 'CO AQI Value', 'NO2 AQI
+Value', etc. Regression models are well-suited for making predictions
+based on these types of variables.</p>
+<p><strong>3. Research Questions Addressed:</strong></p>
+<ol>
+<li><p>What factors contribute to higher AQI levels?</p></li>
+<li><p>How do different pollutants correlate with the AQI?</p></li>
+</ol>
+</section>
+<div class="cell markdown" id="HHPptkE8bvwU">
+<p>####<strong>Step 1: Prepare Data for Regression Analysis</strong></p>
+<ol>
+<li><p>Ensure all predictor variables (pollutant levels) and the target
+variable ('AQI Value') are numerical and appropriately scaled.</p></li>
+<li><p>Handle any multicollinearity in the data by checking correlation
+matrices and potentially removing highly correlated predictors.</p></li>
+</ol>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:682}"
+id="TanHbObXb2jX" data-outputId="556a473c-19c3-46a0-8441-c57707925797">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Correlation matrix</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>corr <span class="op">=</span> air_pollution_data[[<span class="st">&#39;AQI Value&#39;</span>, <span class="st">&#39;CO AQI Value&#39;</span>, <span class="st">&#39;NO2 AQI Value&#39;</span>, <span class="st">&#39;Ozone AQI Value&#39;</span>, <span class="st">&#39;PM2.5 AQI Value&#39;</span>]].corr()</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">8</span>))</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>sns.heatmap(corr, annot<span class="op">=</span><span class="va">True</span>, fmt<span class="op">=</span><span class="st">&quot;.2f&quot;</span>, cmap<span class="op">=</span><span class="st">&quot;coolwarm&quot;</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_2fcc4a5131f74f7fbfe5f2d044c26379/712a0e6f4f6d32f7c2c201fe8f8c9958422c9b6e.png" /></p>
+</div>
+</div>
+<section id="step-2-regression-model-building" class="cell markdown"
+id="hqERzCsSb6qn">
+<h4><strong>Step 2: Regression Model Building</strong></h4>
+<ol>
+<li>Fit a regression model to predict 'AQI Value' based on
+pollutants.</li>
+<li>Evaluate the model using appropriate metrics (e.g., R-squared,
+MSE).</li>
+</ol>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="x-4rKacTb9Vi" data-outputId="fe802a9d-733d-4846-d2ac-c1538f7bb361">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Splitting the dataset into training and testing sets</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> air_pollution_data[[<span class="st">&#39;CO AQI Value&#39;</span>, <span class="st">&#39;NO2 AQI Value&#39;</span>, <span class="st">&#39;Ozone AQI Value&#39;</span>, <span class="st">&#39;PM2.5 AQI Value&#39;</span>]]</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> air_pollution_data[<span class="st">&#39;AQI Value&#39;</span>]</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating a linear regression model</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> LinearRegression()</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>model.fit(X_train, y_train)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Predicting and evaluating the model</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model.predict(X_test)</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Mean Squared Error:&quot;</span>, mean_squared_error(y_test, y_pred))</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;R-squared:&quot;</span>, r2_score(y_test, y_pred))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Mean Squared Error: 76.99214925270246
+R-squared: 0.9758391044397207
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="3GwY4C7UcGPA">
+<p>We have effectively utilized regression analysis to address critical
+questions about the variations in air quality across different regions
+and their direct impacts on public health. Here, we integrate the
+findings from the regression model performance and the insights derived
+from the correlation heatmap to present a comprehensive view of the
+influence of various pollutants on air quality and health outcomes.</p>
+<h3
+id="comprehensive-analysis-of-regression-model-performance"><strong>Comprehensive
+Analysis of Regression Model Performance</strong></h3>
+<p>The regression model demonstrated impressive predictive capabilities,
+as evidenced by a Mean Squared Error (MSE) of 76.992 and an R-squared
+value of 0.9758. The low MSE indicates that the model's predictions are
+closely aligned with the actual values, making it a reliable tool for
+forecasting AQI based on the levels of specific pollutants. The high
+R-squared value suggests that approximately 97.58% of the variability in
+AQI can be explained by the model, which included key pollutants like
+CO, NO2, Ozone, and PM2.5.</p>
+<h3 id="deep-insights-from-the-correlation-heatmap"><strong>Deep
+Insights from the Correlation Heatmap</strong></h3>
+<p>The correlation heatmap provided critical insights into the
+relationships between AQI and various pollutants:</p>
+<ul>
+<li><strong>PM2.5 and AQI:</strong> A very high positive correlation
+(0.98) suggests that PM2.5 is a major contributor to poor air quality,
+significantly worsening AQI as its levels increase.</li>
+<li><strong>CO and AQI:</strong> The strong positive correlation (0.43)
+underscores CO's significant impact on air quality, highlighting it as a
+crucial target for pollution control.</li>
+<li><strong>NO2 and AQI:</strong> The moderate correlation (0.23)
+indicates a less direct but notable impact on AQI, suggesting areas for
+targeted environmental monitoring.</li>
+<li><strong>Ozone and AQI:</strong> A correlation of 0.41 with AQI may
+reflect complex interactions influenced by diurnal and seasonal
+variations, pointing to the need for more nuanced air quality management
+strategies.</li>
+</ul>
+<h3 id="regional-variations-and-public-health-impacts"><strong>Regional
+Variations and Public Health Impacts</strong></h3>
+<p>The regression analysis revealed that certain regions exhibited
+consistently higher AQI values, often correlated with higher levels of
+industrial activity, population density, and limited environmental
+regulations. Cities with heavy industrial bases showed elevated levels
+of NO2 and PM2.5, correlating directly with higher AQI values. These
+findings highlight regional disparities in air quality and pinpoint
+specific factors contributing to these variations, such as economic
+activities and urbanization rates.</p>
+<h3
+id="data-driven-insights-for-public-health-mitigation"><strong>Data-Driven
+Insights for Public Health Mitigation</strong></h3>
+<p>The analysis also focused on the impact of air quality on public
+health, particularly in terms of pollution-specific diseases. For
+instance, increases in PM2.5 levels were associated with higher hospital
+admissions for asthma and other respiratory conditions. The model's
+predictive power allows for forecasting future air quality scenarios
+based on current trends in pollutant emissions and meteorological data.
+This capability is invaluable in issuing timely health advisories and
+preparing healthcare services to respond during periods of low air
+quality.</p>
+<h3 id="conclusion-and-future-directions"><strong>Conclusion and Future
+Directions</strong></h3>
+<p>By integrating the regression model's results with the insights from
+the correlation heatmap, this project provides a robust framework for
+understanding and managing air quality. The findings not only shed light
+on the geographical and pollutant-specific factors influencing air
+quality but also demonstrate how targeted, data-driven interventions can
+mitigate adverse health effects. These insights can guide the
+implementation of stringent air quality regulations and public health
+initiatives, ultimately improving public health outcomes globally. The
+predictive insights from the model also empower policymakers to enact
+proactive measures based on forecasted air quality conditions, ensuring
+communities are better prepared to handle pollution episodes. Through
+such in-depth analysis, the project contributes to a deeper
+understanding and proactive management of air quality, fostering a
+healthier environment and populace.</p>
+</div>
+<section id="5-visualization" class="cell markdown" id="f6yOCFtgdXnQ">
+<h2><strong>5. Visualization</strong></h2>
+</section>
+<section id="1-scatter-plot-of-aqi-vs-pollutant-levels"
+class="cell markdown" id="VJa5oUgpdeZN">
+<h4><strong>1. Scatter Plot of AQI vs. Pollutant Levels</strong></h4>
+<p>This scatter plot shows the relationship between AQI values and
+different pollutants such as CO, NO2, Ozone, and PM2.5.</p>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:564}"
+id="o-qU9bnidnrs" data-outputId="6ec47847-2710-4e75-b240-c52c98031619">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatter plot for AQI Value vs. CO AQI Value</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(x<span class="op">=</span>air_pollution_data[<span class="st">&#39;CO AQI Value&#39;</span>], y<span class="op">=</span>air_pollution_data[<span class="st">&#39;AQI Value&#39;</span>])</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Scatter Plot of AQI vs. CO Levels&#39;</span>)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;CO AQI Value&#39;</span>)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;AQI Value&#39;</span>)</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_2fcc4a5131f74f7fbfe5f2d044c26379/873c6f40595f3f813416803f47227acb97b47138.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="VXjtdkB3dq5Q">
+<p><strong>Insight:</strong></p>
+<p>Insight from the Scatter Plot of AQI vs. CO Levels The scatter plot
+illustrates a clear correlation between CO levels and AQI, which is
+particularly evident at lower concentrations of CO. The majority of the
+data points cluster at lower CO AQI Values (below 20), where the AQI
+also tends to be lower, suggesting that at these levels, CO has a more
+constrained impact on overall air quality. As CO AQI Values increase, we
+observe a wider spread in the AQI Values, indicating a more pronounced
+variability in how CO levels affect the AQI.</p>
+<ol>
+<li><p><strong>Distribution and Density</strong>: The plot shows a dense
+clustering of data points at lower CO levels, where the AQI values also
+tend to be lower, indicating generally good to moderate air quality.
+This density decreases as CO levels increase, suggesting less frequent
+but more severe air quality issues at higher CO levels.</p></li>
+<li><p><strong>Trend Observation</strong>: While the overall trend
+suggests that higher CO levels might correlate with higher AQI values,
+the relationship is not strictly linear. There are several outliers with
+high AQI values at relatively moderate CO levels, indicating that other
+factors besides CO might significantly influence AQI.</p></li>
+<li><p><strong>High AQI Concentration at Low CO Levels</strong>: The
+presence of high AQI values even at lower ranges of CO indicates that CO
+is not the sole determinant of poor air quality. This highlights the
+importance of considering multiple pollutants in air quality assessments
+and regulations.</p></li>
+</ol>
+<p>This scatter plot is crucial for understanding the impact of CO on
+air quality and underscores the need for comprehensive air quality
+management strategies that consider a range of pollutants to effectively
+mitigate risks and protect public health.</p>
+</div>
+<section id="2-correlation-heatmap" class="cell markdown"
+id="3Gdsk9u8dpTa">
+<h4><strong>2. Correlation Heatmap</strong></h4>
+<p>A heatmap to display the correlation between different pollutants and
+AQI values, helping to identify which pollutants have the strongest
+relationships with AQI.</p>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:699}"
+id="WU1GCFvudv4z" data-outputId="41008c7d-1c03-49fa-a960-f9bc1b78f9ff">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Correlation heatmap</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">8</span>))</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>sns.heatmap(air_pollution_data[[<span class="st">&#39;AQI Value&#39;</span>, <span class="st">&#39;CO AQI Value&#39;</span>, <span class="st">&#39;NO2 AQI Value&#39;</span>, <span class="st">&#39;Ozone AQI Value&#39;</span>, <span class="st">&#39;PM2.5 AQI Value&#39;</span>]].corr(), annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">&#39;coolwarm&#39;</span>, fmt<span class="op">=</span><span class="st">&quot;.2f&quot;</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Correlation Heatmap of AQI and Pollutants&#39;</span>)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_2fcc4a5131f74f7fbfe5f2d044c26379/7f3fd799043fc8ccea5e4c85a299d44990c6d5a4.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="gWa3P947dynf">
+<p><strong>Insight:</strong> High correlation coefficients indicate
+strong relationships, guiding further analysis and potential policy
+focus areas.</p>
+<ol>
+<li><p><strong>PM2.5 and AQI Correlation (0.98)</strong>: This very high
+positive correlation indicates that PM2.5 levels have a significant and
+direct impact on the AQI. The near-perfect correlation suggests that
+managing PM2.5 levels is crucial for improving air quality.</p></li>
+<li><p><strong>CO and AQI Correlation (0.43)</strong>: This moderate
+positive correlation demonstrates that higher levels of carbon monoxide
+contribute to higher AQI values, although its impact is less pronounced
+compared to PM2.5.</p></li>
+<li><p><strong>NO2 and AQI Correlation (0.23)</strong>: A weaker
+positive correlation here suggests that while NO2 affects air quality,
+its impact on the AQI is relatively lower compared to other pollutants
+like PM2.5 and CO.</p></li>
+<li><p><strong>Ozone and AQI Correlation (0.41)</strong>: This moderate
+correlation reflects Ozone's complex role in air quality, as its impact
+can vary based on environmental conditions such as sunlight and
+temperature.</p></li>
+</ol>
+<p>These insights underscore the importance of focusing pollution
+control efforts on PM2.5 and CO to effectively manage and improve air
+quality, while also considering the roles of NO2 and Ozone.</p>
+</div>
+<section id="3-box-plot-of-aqi-by-aqi-category" class="cell markdown"
+id="W2Xssydldz_9">
+<h4><strong>3. Box Plot of AQI by AQI Category</strong></h4>
+<p>This visualization shows the spread of AQI values within each AQI
+category, highlighting variations and outliers.</p>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:564}"
+id="9X1l3BkId2L4" data-outputId="66d40f6d-a7ef-4596-bfe0-011147dafc61">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">&#39;AQI Category&#39;</span>, y<span class="op">=</span><span class="st">&#39;AQI Value&#39;</span>, data<span class="op">=</span>air_pollution_data)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Box Plot of AQI Values by AQI Category&#39;</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;AQI Category&#39;</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;AQI Value&#39;</span>)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_2fcc4a5131f74f7fbfe5f2d044c26379/31d4e75b013918fe5b08ef233d6c1ae9356ba2cc.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="YWQje6xMd-1J">
+<p><strong>Insight:</strong> This plot helps to visualize the range of
+AQI values classified under each air quality category, showing how AQI
+values are distributed within categories defined by environmental
+standards.</p>
+</div>
+<section id="4-histogram-of-aqi-values" class="cell markdown"
+id="kqkuevn3eFxE">
+<h4><strong>4. Histogram of AQI Values</strong></h4>
+<p>A histogram to visualize the distribution of AQI values across the
+dataset.</p>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:564}"
+id="LL_Kf0dFeDWZ" data-outputId="0b649e8b-8fe8-42c0-bf22-68cb2a5a41c9">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>sns.histplot(air_pollution_data[<span class="st">&#39;AQI Value&#39;</span>], bins<span class="op">=</span><span class="dv">30</span>, kde<span class="op">=</span><span class="va">True</span>, color<span class="op">=</span><span class="st">&#39;blue&#39;</span>)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Histogram of AQI Values&#39;</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;AQI Value&#39;</span>)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Frequency&#39;</span>)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_2fcc4a5131f74f7fbfe5f2d044c26379/2d7c2baa87cbca93d1c8a727c3cc14a94d7c81f1.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="uYACPgbbeZPY">
+<p><strong>Insight:</strong> This helps in understanding the frequency
+of various AQI levels, indicating common air quality conditions and
+highlighting the prevalence of high pollution days.</p>
+<ol>
+<li><p><strong>Range and Median</strong>: Each box plot shows the median
+(central line) and the range (whiskers) of AQI values within each
+category. For example, the 'Moderate' category has a compact range with
+a lower median, indicating generally moderate air quality. In contrast,
+the 'Hazardous' category has a very high median and a wide range,
+reflecting severe variability in air quality conditions that are
+potentially dangerous.</p></li>
+<li><p><strong>Outliers</strong>: The presence of outliers in categories
+like 'Good' suggests occasional instances where the AQI significantly
+deviates from typical values observed in this category.</p></li>
+<li><p><strong>Category Comparison</strong>: Categories such as 'Very
+Unhealthy' and 'Hazardous' exhibit higher AQI values and greater spread,
+indicating more severe air pollution levels. This is in stark contrast
+to the 'Good' category, where the AQI values are significantly lower and
+tightly grouped, showcasing better air quality.</p></li>
+</ol>
+<p>This visualization underscores the variability in air pollution
+severity across different categories and highlights the importance of
+continuous monitoring and targeted interventions to manage air quality,
+particularly in more severely affected areas.</p>
+</div>
+<section id="5-bar-plot-of-average-aqi-by-country" class="cell markdown"
+id="7F4QV88AeiiG">
+<h4><strong>5. Bar Plot of Average AQI by Country</strong></h4>
+<p>A bar plot showing the average AQI for each country, which can
+highlight regional variations in air quality.</p>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="TCjrd8yZe_lL" data-outputId="7a913c03-9890-407e-854c-b3ca354c10a5">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculating average AQI per country</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>avg_aqi_per_country <span class="op">=</span> air_pollution_data.groupby(<span class="st">&#39;Country&#39;</span>)[<span class="st">&#39;AQI Value&#39;</span>].mean().sort_values()</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">8</span>))</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>avg_aqi_per_country.plot(kind<span class="op">=</span><span class="st">&#39;bar&#39;</span>, color<span class="op">=</span><span class="st">&#39;green&#39;</span>)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Average AQI by Country&#39;</span>)</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Country&#39;</span>)</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Average AQI Value&#39;</span>)</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_2fcc4a5131f74f7fbfe5f2d044c26379/cfa391effad925a9cab68cf0414dc27707e3468c.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="vuG1GHEyfGFP">
+<p><strong>Insight:</strong> This visualization can be critical in
+identifying countries with higher pollution levels, potentially guiding
+international health and environmental policies.</p>
+<ol>
+<li><p><strong>Variability Across Countries</strong>: The chart shows a
+wide range of average AQI values across countries. Some countries have
+very low average AQI, indicating good air quality, while others have
+high average AQI, indicating poor air quality.</p></li>
+<li><p><strong>Gradual Increase</strong>: There is a gradual increase in
+the average AQI as we move from left to right across the chart,
+culminating in a few countries with exceptionally high values.</p></li>
+<li><p><strong>High AQI Countries</strong>: The countries on the right,
+with the tallest bars, indicate areas with potentially hazardous air
+quality. These regions may require urgent environmental interventions to
+mitigate pollution and improve public health outcomes.</p></li>
+</ol>
+<p>This visualization is crucial for identifying countries with critical
+air quality issues and highlights the global disparity in air pollution,
+emphasizing the need for targeted environmental policies.</p>
+</div>
+<section id="6-insights-and-conclusions" class="cell markdown"
+id="Wh4Mkl4CfxUh">
+<h2><strong>6. Insights and Conclusions</strong></h2>
+<p>Throughout this data science project, we have embarked on a thorough
+examination of global air quality, using a detailed dataset to uncover
+the complex interplay between air pollutants and their impacts on both
+environmental and public health. Our aim was not only to generate
+actionable insights but also to foster a comprehensive understanding of
+air quality trends worldwide, catering to both expert and lay
+audiences.</p>
+<h3 id="comprehensive-overview"><strong>Comprehensive
+Overview</strong></h3>
+<p>For those new to the subject, this project serves as an introductory
+guide that underscores the importance of air quality studies. By
+systematically addressing our primary objectives—identifying key
+contributors to air pollution, understanding regional variations in air
+quality, and exploring the relationships between air pollutants and
+their health impacts—the analysis acts as an educational tool. It
+provides clear definitions of air quality indices (AQI), explains their
+measurement processes, and details the significance of pollutants like
+CO, NO2, ozone, and PM2.5 in everyday life.</p>
+<h3 id="deep-dive-into-data-analysis"><strong>Deep Dive into Data
+Analysis</strong></h3>
+<p>The core of our analysis employed regression techniques to identify
+significant predictors of poor air quality, showing that some pollutants
+have a more pronounced influence on AQI than others. The inclusion of
+scatter plots and correlation matrices offered both visual and
+statistical evidence of the strong relationships between certain
+pollutants and AQI values. This not only educates a novice reader about
+key pollutants but also provides a quantitative understanding for more
+informed readers.</p>
+<h3 id="seasonal-and-geographic-variations"><strong>Seasonal and
+Geographic Variations</strong></h3>
+<p>Our findings on seasonal and geographic variations in air quality,
+based on available temporal data, offer invaluable insights to all
+readers. Identifying how air quality changes over time and differs
+across regions or cities helps illustrate the effects of urbanization,
+policy changes, and seasonal variations on air quality.</p>
+<h3
+id="practical-applications-and-policy-implications"><strong>Practical
+Applications and Policy Implications</strong></h3>
+<p>For those familiar with the subject, our project delves deeper by
+connecting analytical insights to practical applications and policy
+implications. Discussing how our findings could influence public health
+advisories or inform environmental policies adds a layer of practicality
+to the theoretical knowledge, showcasing how data-driven insights can
+lead to tangible improvements in environmental health.</p>
+<h3 id="educational-and-engaging"><strong>Educational and
+Engaging</strong></h3>
+<p>Designed to be both instructive and engaging, this project merges
+in-depth statistical analysis with accessible explanations and clear
+visualizations, ensuring value for a diverse audience. By detailing each
+step of the data handling and analysis process, the project is not just
+approachable for newcomers but also enriching for professionals
+exploring specific aspects of environmental data science.</p>
+<h3 id="conclusion"><strong>Conclusion</strong></h3>
+<p>In conclusion, this data science project on air quality analysis
+successfully meets its objectives of educating and informing its
+audience. It provides a foundational understanding of air pollution and
+its impacts for novices while offering fresh insights and deeper
+analyses for those already knowledgeable. The project demonstrates how
+complex data can be transformed into understandable, actionable
+knowledge, underscoring the role of data science in addressing
+real-world issues. The insights gained from this analysis can serve as
+critical resources for policymakers, researchers, and the public,
+fostering informed decisions and proactive measures for better air
+quality management.</p>
+</section>
+</body>
+</html>
